@@ -1,1 +1,326 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Open+Sans:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: silver;
+  border-radius: 8px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  background: #ffffff;
+  background: rgb(250, 202, 255);
+  background: linear-gradient(180deg, rgb(250, 202, 255) 0%, rgb(255, 255, 255) 100%);
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    padding: 0 150px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 30%;
+  }
+}
+
+.introduction {
+  text-align: center;
+  width: 100%;
+  margin: 270px auto;
+  border-radius: 56px;
+  border-radius: 50px;
+  background: #f0f0f0;
+  box-shadow: -20px -20px 60px #ffffff, 20px 20px 60px #dddddd;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+.introduction .text-description {
+  margin: 0 0 20px 0;
+}
+.introduction .site-description h1 {
+  color: #2d0047;
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .introduction .site-description h1 {
+    font-size: 28px;
+  }
+}
+@media (min-width: 992px) {
+  .introduction .site-description h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .introduction .site-description h1 {
+    font-size: 34px;
+  }
+}
+.introduction .site-description h3 {
+  color: #540075;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .introduction .site-description h3 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .introduction .site-description h3 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .introduction .site-description h3 {
+    font-size: 28px;
+  }
+}
+.introduction button {
+  border: 2px solid #ffffff;
+  background-color: #ff7ab8;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .introduction button {
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) {
+  .introduction button {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1200px) {
+  .introduction button {
+    font-size: 30px;
+  }
+}
+.introduction button:hover {
+  border: 2px solid #ff7ab8;
+  background-color: #ffffff;
+  color: #ff7ab8;
+}
+
+.random-meal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 117px;
+}
+
+.section-first {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.section-first:hover .meal-info {
+  transform: translateY(-120px);
+}
+.section-first #meal-img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 3s ease-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-first #meal-img:hover {
+  transform: rotate(15deg) scale(1.4);
+}
+.section-first .meal-info {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7607843137);
+  text-align: left;
+  transition: all 0.9s ease-out;
+  color: #000000;
+  padding: 10px;
+}
+.section-first .meal-info p {
+  font-size: 14px;
+  margin: 4px 0;
+}
+.section-first .meal-info p strong {
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+}
+@media (min-width: 768px) {
+  .section-first .meal-info p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  .section-first .meal-info p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-first .meal-info p {
+    font-size: 22px;
+  }
+}
+
+.section-second {
+  margin: 40px 0;
+}
+.section-second h1 {
+  font-size: 18px;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .section-second h1 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .section-second h1 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-second h1 {
+    font-size: 28px;
+  }
+}
+.section-second p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  .section-second p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .section-second p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-second p {
+    font-size: 22px;
+  }
+}
+
+.section-third {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.section-third h1 {
+  font-size: 18px;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .section-third h1 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .section-third h1 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-third h1 {
+    font-size: 28px;
+  }
+}
+.section-third ul {
+  list-style: circle;
+  padding-left: 100px;
+}
+.section-third ul li {
+  font-size: 14px;
+  margin: 3px 0;
+}
+@media (min-width: 768px) {
+  .section-third ul li {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .section-third ul li {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-third ul li {
+    font-size: 22px;
+  }
+}
+
+.section-fourth {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.section-fourth h1 {
+  font-size: 18px;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .section-fourth h1 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .section-fourth h1 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-fourth h1 {
+    font-size: 28px;
+  }
+}
+.section-fourth div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */

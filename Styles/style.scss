@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Open+Sans:wght@500&display=swap');
+@import './variables';
+@import './Mixins';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #ffff;
+}
+::-webkit-scrollbar-thumb{
+    background-color: silver;
+    border-radius: 8px;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: $fontStyle1;
+    background: #ffffff; 
+    background: rgb(250,202,255);
+    background: linear-gradient(180deg, rgba(250,202,255,1) 0%,rgba(255,255,255,1) 100%);
+    background-repeat: no-repeat;
+}
+
+.container{
+     padding: 0 20px;  
+     @include query(768){
+        padding: 0 40px; 
+     }
+     @include query(992){
+        padding: 0 150px; 
+     }
+     @include query(1200){
+        padding: 0 30%; 
+     }
+}
+.introduction{
+    text-align: center;
+    width: 100%;
+    margin:270px auto;
+    border-radius: 56px;
+    border-radius: 50px;
+    background: #f0f0f0;
+    box-shadow:-20px -20px 60px #ffffff, 20px 20px 60px #dddddd;
+    padding: 50px 20px;
+    border-radius: 10px;
+    .text-description{
+        margin: 0 0 20px 0;
+    }
+    .site-description h1{
+        color: #2d0047;
+        font-size: 20px;
+        @include query(768){
+            font-size: 28px;
+        }
+        @include query(992){
+            font-size: 30px;
+        }
+        @include query(1200){
+            font-size: 34px;
+        }
+    }
+    .site-description h3{
+        color: #540075;
+        font-size: 14px;
+        @include query(768){
+            font-size: 20px;
+        }
+        @include query(992){
+            font-size: 20px;
+        }
+        @include query(1200){
+            font-size: 28px;
+        }
+    }
+    button{
+        border:2px solid #ffffff;
+        background-color: #ff7ab8;
+        color: #ffffff;
+        padding: 10px 15px;
+        font-family: $fontStyle2;
+        font-weight: 800;
+        border-radius: 10px;
+        transition: all 0.4s ease;
+        cursor: pointer;
+        font-size: 16px;
+        @include query(768){
+            font-size: 24px;
+        }
+        @include query(992){
+            font-size: 28px;
+        }
+        @include query(1200){
+            font-size: 30px;
+        }
+        &:hover{
+            border:2px solid #ff7ab8;
+            background-color: #ffffff;
+            color: #ff7ab8;
+        }
+    }
+}
+.random-meal-container{
+    @include flex (column ,space-between , center);
+    padding-top: 117px;
+}
+.section-first{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    &:hover .meal-info{
+        transform:translateY(-120px);
+    }
+    #meal-img{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: all 3s ease-out;
+        object-fit: cover;
+        &:hover{
+            transform:rotate(15deg) scale(1.4);
+        }
+    }
+    .meal-info{
+        width: 100%;
+        height: 100%;
+        background-color: #ffffffc2;
+        text-align: left;
+        transition: all 0.9s ease-out;
+        color: #000000;
+        padding: 10px;
+        p{
+            font-size: 14px;
+            margin: 4px 0;
+            strong{
+                font-size: 16px;
+                font-family: $fontStyle2;
+            }
+            @include query(768){
+                font-size: 18px;
+            }
+            @include query(992){
+                font-size: 20px;
+            }
+            @include query(1200){
+                font-size: 22px;
+            }
+        }
+    }
+}
+.section-second{
+    margin: 40px 0;
+    h1{
+        font-size: 18px;
+        font-weight: 800;
+        font-family: $fontStyle2;
+        margin-bottom: 15px;
+        @include query(768){
+            font-size: 20px;
+        }
+        @include query(992){
+            font-size: 24px;
+        }
+        @include query(1200){
+            font-size: 28px;
+        }
+    }
+    p{
+        font-size: 14px;
+        margin-bottom: 15px;
+        text-align: justify;
+        @include query(768){
+            font-size: 16px;
+        }
+        @include query(992){
+            font-size: 20px;
+        }
+        @include query(1200){
+            font-size: 22px;
+        }
+    }
+}
+.section-third{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    margin-bottom: 40px;
+    h1{
+        font-size: 18px;
+        font-weight: 800;
+        font-family: $fontStyle2;
+        margin-bottom: 15px;
+        @include query(768){
+            font-size: 20px;
+        }
+        @include query(992){
+            font-size: 24px;
+        }
+        @include query(1200){
+            font-size: 28px;
+        }
+    }
+    ul{
+        list-style:circle;
+        padding-left: 100px;
+        li{
+            font-size: 14px;
+            margin: 3px 0;
+            @include query(768){
+                font-size: 16px;
+            }
+            @include query(992){
+                font-size: 20px;
+            }
+            @include query(1200){
+                font-size: 22px;
+            }
+        }
+    }
+}
+.section-fourth{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    margin-bottom: 40px;
+    h1{
+        font-size: 18px;
+        font-weight: 800;
+        font-family: $fontStyle2;
+        margin-bottom: 15px;
+        @include query(768){
+            font-size: 20px;
+        }
+        @include query(992){
+            font-size: 24px;
+        }
+        @include query(1200){
+            font-size: 28px;
+        }
+    }
+    div{
+        @include flex (column ,center , center);
+    }
+}
