@@ -50,6 +50,7 @@
         <li><a href="#how-do-i-fork-this-repository">How do I fork this repository?</a></li>
         <li><a href="#how-do-i-rename-the-forked-repository">How do I rename the forked repository?</a></li>
         <li><a href="#how-do-i-run-the-project-locally">How do I run the project locally?</a></li>
+        <li><a href="why-does-the-website-not-load-YouTube-video-recipes">Why does the website not load YouTube video recipes?</a></li>
       </ul>
     </li>
     <li>
@@ -96,6 +97,7 @@ If this is your first time making a website and is having trouble getting starte
 * [How do I fork this repository?](#how-do-i-fork-this-repository)
 * [How do I rename the forked repository?](#how-do-i-rename-the-forked-repository)
 * [How do I run the project locally?](#how-do-i-run-the-project-locally)
+* [Why does the website not load YouTube video recipes?](#why-does-the-website-not-load-YouTube-video-recipes)
 
 ### How do I fork this repository?
 1. Make sure you're logged into GitHub with your account
@@ -107,11 +109,14 @@ If this is your first time making a website and is having trouble getting starte
 3. Under the Repository name heading, type `new repo name` then click Rename
 
 ### How do I run the project locally?
-1. Open a CLI (Command Line Interface) like cmd (you can open terminal in vscode)
+1. Open a CLI (Command Line Interface) like cmd (you can also open terminal in vscode)
 2. Go to the project directory
 3. Install Axios by running the command `npm i` or `npm i axios`
 4. Open the project with Live Server or open the Index.html file
 
+### Why does the website not load YouTube video recipes?
+1. Use a VPN :(
+2. Reload the page
 ## Contributing
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue.
